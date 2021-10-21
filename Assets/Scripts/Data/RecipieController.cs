@@ -25,7 +25,12 @@ public class RecipieController : MonoBehaviour
     [SerializeField]
     private RecipieCharacter _selectedCharacter;
     public RecipieCharacter SelectedCharacter => _selectedCharacter;
-    public int recipieLimitItems = 2;
+    public int recipieLimitItems = 7;
+
+    [SerializeField]
+    private List<GameObject> _spawnPoints = new List<GameObject>();
+    public List<GameObject> SpawnPoints => _spawnPoints;
+
 
 
     private void Awake()
@@ -37,6 +42,9 @@ public class RecipieController : MonoBehaviour
     {
         _selectedRecipieItems = GetSelectedRecipieItems();
         _selectedCharacter = GetSelectedRecipieCharacter();
+        _spawnPoints = GetSpawnPoints();
+        if(!LevelRecipieMenu.Instance) return;
+        SetUICard();
 
     }
 
@@ -78,6 +86,35 @@ public class RecipieController : MonoBehaviour
         }
         return newList;
 
+    }
+
+    private string CreateDescription()
+    {
+        var listDest = "";
+        foreach(var item in _selectedRecipieItems)
+        {
+            listDest += $"-{item.Name}\n";
+        }
+        var description = $"{_selectedCharacter.Description}\n{listDest}";
+        return description;
+
+    }
+
+    private List<GameObject> GetSpawnPoints()
+    {
+        var spawnPointsFound = FindObjectsOfType<SpawnPoint>();
+        var newList = new List<GameObject>();
+        foreach(var spawnPoint in spawnPointsFound)
+        {
+            newList.Add(spawnPoint.gameObject);
+        }
+        return newList;
+
+    }
+
+    private void SetUICard()
+    {
+        LevelRecipieMenu.Instance.SetRecipieCard(_selectedCharacter.Name, CreateDescription(), _selectedCharacter.Image, _selectedRecipieItems);
     }
 
 

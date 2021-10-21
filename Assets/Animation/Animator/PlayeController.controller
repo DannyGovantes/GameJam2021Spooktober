@@ -638,9 +638,6 @@ AnimatorStateMachine:
   - {fileID: -5398234765465028502}
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: -3250486619700695004}
-    second:
-    - {fileID: -3167827665367909527}
   - first: {fileID: -2376788466984648439}
     second:
     - {fileID: -1057633968678323211}
@@ -651,6 +648,9 @@ AnimatorStateMachine:
     - {fileID: -5517012362092984528}
     - {fileID: -3976211408727118965}
     - {fileID: 5684719640456952511}
+  - first: {fileID: -3250486619700695004}
+    second:
+    - {fileID: -3167827665367909527}
   - first: {fileID: 2580848193995283430}
     second:
     - {fileID: 245032536726024184}
@@ -1879,7 +1879,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MeleeCombatSM
+  m_Name: PickUp
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4922537310162016847}
