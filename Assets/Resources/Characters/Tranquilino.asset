@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe23c6e0e5cda3a468b31629a5a66e59, type: 3}
   m_Name: Tranquilino
   m_EditorClassIdentifier: 
-  _name: 
-  _description: 
+  _name: Tranquilino
+  _description: "Yo s\xED reprob\xE9 a todos mis alumnos, verdad de dios."
   _image: {fileID: 0}

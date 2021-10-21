@@ -19,8 +19,8 @@ public class MenuManager : MonoBehaviour
     private GameMenu gameMenuPrefab;
     [SerializeField]
     private WinScreen winScreenPrefab;
-
-
+    [SerializeField]
+    private LevelRecipieMenu levelRecipieMenuPrefab;
 
     #endregion
 
