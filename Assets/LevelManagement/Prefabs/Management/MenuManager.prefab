@@ -125,4 +125,5 @@ MonoBehaviour:
   gameMenuPrefab: {fileID: 93018696772518560, guid: 4b41f114dda588e468021635332f8399, type: 3}
   winScreenPrefab: {fileID: 3742922380824285118, guid: 388a9c976a27bfe4b824563a704dc198, type: 3}
   levelRecipieMenuPrefab: {fileID: 7446047590371847440, guid: 95bae090c90506b42b970abdb2cbe415, type: 3}
+  instructionsMenuPrefab: {fileID: 5623181281660501245, guid: 3e35def9d95e4784fbb481ec1e377355, type: 3}
   _menuParent: {fileID: 0}

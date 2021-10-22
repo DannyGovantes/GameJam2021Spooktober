@@ -25,7 +25,7 @@ using UnityEngine.UI;
     {
         // StartCoroutine(OnPlayPressedRoutine());
         LevelLoader.LoadNextLevel();
-        LevelRecipieMenu.Open();
+        InstructionsMenu.Open();
 
     }
     // private IEnumerator OnPlayPressedRoutine()

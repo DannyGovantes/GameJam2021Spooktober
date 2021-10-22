@@ -9,14 +9,16 @@ public class PauseMenu : Menu<PauseMenu>
     public void OnResumePressed()
     {
         Time.timeScale = 1;
+        GameManager.Instance.SwitchScheme(false);
         base.OnBackPressed();
     }
 
     public void OnRestartPressed()
     {
         Time.timeScale = 1;
+        InstructionsMenu.Open();
+        InstructionsMenu.Instance.InitializeRoutine();
         LevelLoader.ReloadLevel();
-        base.OnBackPressed();
     }
 
     public void OnMainMenuPressed()
@@ -25,15 +27,19 @@ public class PauseMenu : Menu<PauseMenu>
         LevelLoader.LoadMainMenuLevel();
 
         MainMenu.Open();
-
-        base.OnBackPressed();
-
     }
-    public void OnQuitPressed()
+  
+      public override void OnBackPressed()
     {
-        Application.Quit();
 
+#if UNITY_EDITOR
+    UnityEditor.EditorApplication.isPlaying = false;
+#else
+
+        Application.Quit();
+#endif
     }
+
 }
 
 

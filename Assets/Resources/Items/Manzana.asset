@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Manzana
   _image: {fileID: 0}
-  _model: {fileID: 919132149155446097, guid: a9c2a2dfbecb8cc49970a9452ba581bb, type: 3}
+  _model: {fileID: 4329976819429703656, guid: 881ba2cea9b7dcd418354b9395659e29, type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4896125882573643442}
   - component: {fileID: 1086301344482073884}
   - component: {fileID: 6054456536166109816}
-  - component: {fileID: 8335025384598635039}
+  - component: {fileID: 5668645281905483675}
   m_Layer: 0
   m_Name: CrossGrave
   m_TagString: Untagged
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8335025384598635039
-MeshCollider:
+--- !u!65 &5668645281905483675
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1360980382334677151, guid: fdda8db50d6973e41864e43af2620cc2, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4.380777, z: 2}
+  m_Center: {x: 0, y: 2.1984622, z: 0}

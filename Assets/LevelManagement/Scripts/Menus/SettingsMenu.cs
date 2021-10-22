@@ -2,9 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
-
-
-
+using UnityEngine.Audio;
 
 public class SettingsMenu : Menu<SettingsMenu>
 {
@@ -17,6 +15,9 @@ public class SettingsMenu : Menu<SettingsMenu>
 
     [SerializeField]
     private Slider _musicVolumerSlider;
+
+    [SerializeField]
+    private AudioMixer _audioMixer;
 
     private DataManager _dataManager;
 
@@ -36,7 +37,8 @@ public class SettingsMenu : Menu<SettingsMenu>
     {
         if (_dataManager != null)
         {
-            _dataManager.MasterVolume = volume;
+            _audioMixer.SetFloat("Master", Mathf.Log10(volume)* 20f);
+            _dataManager.MasterVolume = Mathf.Log10(volume)* 20f;
         }
     }
 
@@ -44,7 +46,8 @@ public class SettingsMenu : Menu<SettingsMenu>
     {
         if (_dataManager != null)
         {
-            _dataManager.SFXVolume = volume;
+            _audioMixer.SetFloat("SFX", Mathf.Log10(volume)* 20f);
+            _dataManager.SFXVolume = Mathf.Log10(volume)* 20f;
         }
 
     }
@@ -53,7 +56,8 @@ public class SettingsMenu : Menu<SettingsMenu>
     {
         if (_dataManager != null)
         {
-            _dataManager.MusicVolume = volume;
+            _audioMixer.SetFloat("Music", Mathf.Log10(volume)* 20f);
+            _dataManager.MusicVolume = Mathf.Log10(volume)* 20f;
         }
     }
 

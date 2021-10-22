@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Elote
   _image: {fileID: 0}
-  _model: {fileID: 919132149155446097, guid: 710c25c22857d4b4b9b6819b5b021c6a, type: 3}
+  _model: {fileID: 3462591114496022862, guid: 400ee84690471464b9e1d9127aeb949c, type: 3}
