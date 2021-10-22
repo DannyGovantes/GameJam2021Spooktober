@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -337,7 +337,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 moveInput = _movementValue;
         Vector3 localMovementDirection = new Vector3(moveInput.x, 0f, moveInput.y).normalized;
-
+        /* Quaternion camera = Quaternion; */
         //TODO AXIS DE CAMERA (X)
         Vector3 forward = Quaternion.Euler(0f, 1f, 0f) * Vector3.forward;
         forward.y = 0f;
