@@ -18,6 +18,7 @@ public class LevelRecipieMenu : Menu<LevelRecipieMenu>
     public void Start()
     {
         _delayTime = new WaitForSeconds(_delayTimeInSeconds);
+        StartCoroutine(DisplayDelayTime());
     }
 
     public void SetRecipieCard(string characterName,string description, Sprite profileImage,List<RecipieItem> items)
@@ -37,6 +38,7 @@ public class LevelRecipieMenu : Menu<LevelRecipieMenu>
     {
         yield return _delayTime;
         //TODO: OPEN GAME MENU
+        GameMenu.Open();
     }
 
 
