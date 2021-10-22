@@ -1333,7 +1333,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "90603e4367024dcc93ecf3845a9d1271",
     "m_Id": 0,
-    "m_DisplayName": "Smoothnes",
+    "m_DisplayName": "Smoothness",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

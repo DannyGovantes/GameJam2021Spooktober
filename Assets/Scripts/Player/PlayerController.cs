@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Cinemachine;
 
 
 public class PlayerController : MonoBehaviour
@@ -339,7 +340,7 @@ public class PlayerController : MonoBehaviour
         Vector3 localMovementDirection = new Vector3(moveInput.x, 0f, moveInput.y).normalized;
 
         //TODO AXIS DE CAMERA (X)
-        Vector3 forward = Quaternion.Euler(0f, 1f, 0f) * Vector3.forward;
+        Vector3 forward = Quaternion.Euler(0f, 45f, 0f) * Vector3.forward;
         forward.y = 0f;
         forward.Normalize();
 

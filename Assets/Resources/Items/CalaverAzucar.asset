@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: CalaveraAzucarada
   _image: {fileID: 0}
-  _model: {fileID: 0}
+  _model: {fileID: 919132149155446097, guid: 7c408ec4d572f58478c1dd4c537ed9b3, type: 3}
