@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5727227082476256019}
   - component: {fileID: 2288888038337868274}
   - component: {fileID: 5559161664660969101}
-  - component: {fileID: 3763231957775160725}
+  - component: {fileID: 3867722667952965617}
   m_Layer: 0
   m_Name: Grave
   m_TagString: Untagged
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3763231957775160725
-MeshCollider:
+--- !u!65 &3867722667952965617
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8252084882743204326, guid: fdda8db50d6973e41864e43af2620cc2, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.8184254, y: 3.2081265, z: 0.7928806}
+  m_Center: {x: 0, y: 1.6084964, z: 0}

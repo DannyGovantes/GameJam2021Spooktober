@@ -130,9 +130,6 @@ public class PlayerController : MonoBehaviour
             Debug.LogError($"THERE IS NO PLAYER INPUT");
         }
 
-
-
-
         currentControlScheme = _playerInput.currentControlScheme;
     }
 

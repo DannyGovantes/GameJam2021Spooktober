@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Marco
   _image: {fileID: 0}
-  _model: {fileID: 919132149155446097, guid: 3e4be66a5d169aa42ba48c796625bfa6, type: 3}
+  _model: {fileID: 3698618653518824089, guid: 73adc674e6e4d214783651c0bee5c3e1, type: 3}
