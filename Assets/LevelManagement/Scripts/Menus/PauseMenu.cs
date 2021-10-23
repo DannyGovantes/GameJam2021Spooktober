@@ -25,7 +25,6 @@ public class PauseMenu : Menu<PauseMenu>
     {
         Time.timeScale = 1;
         LevelLoader.LoadMainMenuLevel();
-
         MainMenu.Open();
     }
   

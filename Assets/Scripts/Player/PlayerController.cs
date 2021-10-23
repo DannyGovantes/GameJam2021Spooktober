@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Animator _animator;
     private CharacterController _charachertCtrl;
     public bool canAttack;
+    public bool isGrabing;
 
     private const string actionMapPlayerControls = "Player";
     private const string actionMapMenuControls = "UI";
@@ -442,6 +443,7 @@ public class PlayerController : MonoBehaviour
         if (context.started)
         {
             PauseMenu.Open();
+            Time.timeScale = 0;
             GameManager.Instance.SwitchScheme(true);
         }
     }

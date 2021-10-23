@@ -25,7 +25,7 @@ public class RecipieController : MonoBehaviour
     [SerializeField]
     private RecipieCharacter _selectedCharacter;
     public RecipieCharacter SelectedCharacter => _selectedCharacter;
-    public int recipieLimitItems = 7;
+    public int recipieLimitItems =>  _spawnPoints.Count;
 
     [SerializeField]
     private List<SpawnPoint> _spawnPoints = new List<SpawnPoint>();
@@ -40,9 +40,10 @@ public class RecipieController : MonoBehaviour
 
     private void Start()
     {
+        _spawnPoints = GetSpawnPoints();
         _selectedRecipieItems = GetSelectedRecipieItems();
         _selectedCharacter = GetSelectedRecipieCharacter();
-        _spawnPoints = GetSpawnPoints();
+        
         if(!LevelRecipieMenu.Instance) return;
         SetUICard();
         SpawnItems();
@@ -126,8 +127,9 @@ public class RecipieController : MonoBehaviour
         foreach(var spawnPoint in _spawnPoints)
         {
             var item = items[counter];
-            Instantiate(item.Model, spawnPoint.SpawnPosition.position, Quaternion.identity,spawnPoint.transform);
+            var model = Instantiate(item.Model, spawnPoint.SpawnPosition.position, Quaternion.identity,spawnPoint.transform);
             spawnPoint.SetUI(item.Image, item.Name);
+            model.GetComponent<PickUpitem>().SetRecipieItem(item);
             counter++;
         }
 

@@ -22,6 +22,11 @@ public class PickUpitem : MonoBehaviour
         }
     }
 
+    public void SetRecipieItem(RecipieItem item)
+    {
+        _recipieItem = item;
+    }
+
     private void OnValidate()
     {
         if(!TryGetComponent(out _boxCollider))
@@ -39,12 +44,30 @@ public class PickUpitem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerController>().canAttack = true;
+           
+        }
 
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.GetComponent<PlayerController>().isGrabing)
+        {
+            GameManager.Instance.AddItemToInventory(_recipieItem);
+            Destroy(gameObject);
+            other.gameObject.GetComponent<PlayerController>().canAttack = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-
+        if(other.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerController>().canAttack = false;
+        }
     }
 
 

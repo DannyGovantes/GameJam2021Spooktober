@@ -55,6 +55,8 @@ public class LevelRecipieMenu : Menu<LevelRecipieMenu>
     {
         yield return _delayTime;
         GameMenu.Open();
+        GameMenu.Instance.InitializeGameMenu();
+        GameManager.Instance.SwitchScheme(false);
     }
 
 
