@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d02fcd597b6e7e14ca224bd46de44c2a, type: 3}
-  m_Name: "Ag\xFCa"
+  m_Name: "Ag\xFCita"
   m_EditorClassIdentifier: 
   _name: "Ag\xFCita"
   _image: {fileID: 0}

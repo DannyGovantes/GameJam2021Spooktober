@@ -23,6 +23,9 @@ public class MenuManager : MonoBehaviour
     private LevelRecipieMenu levelRecipieMenuPrefab;
     [SerializeField]
     private InstructionsMenu instructionsMenuPrefab;
+    [SerializeField]
+    private EndMenu endMenuPrefab;
+
 
     #endregion
 

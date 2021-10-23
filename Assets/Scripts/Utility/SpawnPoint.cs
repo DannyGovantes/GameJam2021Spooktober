@@ -11,7 +11,7 @@ public class SpawnPoint : MonoBehaviour
     public TMP_Text _name;
     public Color32 gizmoColor;
     public Vector3 scaleGizmo = new Vector3(1f,1f,1f);
-
+   
 
     public void OnDrawGizmos()
     {

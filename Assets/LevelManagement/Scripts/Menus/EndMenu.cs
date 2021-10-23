@@ -1,20 +1,10 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 
-
-
-public class WinScreen : Menu<WinScreen>
+public class EndMenu : Menu<EndMenu>
 {
-
-    public void OnNextLevelPressed()
-    {
-
-        OnMainMenuPressed();
-    }
-
-    public void OnRestartPressed()
+    public void OnRestartLevel()
     {
         Time.timeScale = 1;
         InstructionsMenu.Open();
@@ -22,12 +12,9 @@ public class WinScreen : Menu<WinScreen>
         LevelLoader.ReloadLevel();
     }
 
-    public void OnMainMenuPressed()
+    public void OnMainMenu()
     {
-        Time.timeScale = 1;
         LevelLoader.LoadMainMenuLevel();
         MainMenu.Open();
     }
-
-
 }

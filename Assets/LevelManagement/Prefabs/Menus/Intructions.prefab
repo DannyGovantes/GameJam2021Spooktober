@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.121, y: 0}
-  m_SizeDelta: {x: 261.863, y: 50}
+  m_AnchoredPosition: {x: -3.121, y: 93.742}
+  m_SizeDelta: {x: 261.863, y: 100.678}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5769672629265139386
 CanvasRenderer:
@@ -65,9 +65,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Los muertos necesitan de tu ayuda. O su famila los olvida, no les ponen
+  m_text: "Los muertos necesitan de tu ayuda. \nSu famila los olvida y no les ponen
     lo que les gusta. Busca alrededor si puedes encontrar lo que necesitan y ll\xE9vaselos
-    a su altar, pero apres\xFArate, que casi termina la noche"
+    a su altar, pero apres\xFArate, que casi termina la noche.\n\n-Mu\xE9vete con
+    WASD o el stick izquierdo del controlador.\n-Puedes saltar presionando la barra
+    spaciadora, o 'X' en PS4 y 'A' en XBOX.\n-Agarra los objetos de su altar con
+    click izquiero o con gatillo principal derecho en PS4 o XBOX.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 92280409abc33b147b3c8e36107c4481, type: 2}
   m_sharedMaterial: {fileID: -5349477520176305048, guid: 92280409abc33b147b3c8e36107c4481, type: 2}
@@ -94,7 +97,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.15
+  m_fontSize: 8.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -656,7 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_isStackVisible: 0
-  _timeInSeconds: 7
+  _timeInSeconds: 12
 --- !u!1 &8359440502144912631
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,8 +906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0000041760604}
-  m_SizeDelta: {x: 1000, y: 320}
+  m_AnchoredPosition: {x: 0, y: -65.839}
+  m_SizeDelta: {x: 1000, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2249153607235690379
 CanvasRenderer:
