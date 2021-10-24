@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Naranja
   m_EditorClassIdentifier: 
   _name: Naranja
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: 68a819ce82abc58408dbde2afc93cb47, type: 3}
   _model: {fileID: 6372548316053780800, guid: d4f02f8dd205ca5418ca0402ffe07af0, type: 3}

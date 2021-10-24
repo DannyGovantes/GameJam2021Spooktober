@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Salero
   m_EditorClassIdentifier: 
   _name: Salero
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: 560db912b078bbc49ba8964249594ed6, type: 3}
   _model: {fileID: 772499161190263125, guid: a4bee918ef7a15e46a8bafa4a76c6a73, type: 3}

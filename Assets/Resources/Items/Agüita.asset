@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "Ag\xFCita"
   m_EditorClassIdentifier: 
   _name: "Ag\xFCita"
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: 341dca9ee9a474e4ca288a461738bebe, type: 3}
   _model: {fileID: 5319757174412554340, guid: 92c84048efec16b49a0a9aeaaa81438b, type: 3}

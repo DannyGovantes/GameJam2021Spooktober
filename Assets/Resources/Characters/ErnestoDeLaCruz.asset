@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Ernesto de la cruz
   _description: "Chale, sal\xED en coco. Jejeje salu 2"
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: be3c6b9c4d4474a428bf3e198ff08e3a, type: 3}
