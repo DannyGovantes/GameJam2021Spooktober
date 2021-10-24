@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mole
   m_EditorClassIdentifier: 
   _name: Mole
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: 9de2ab35d6979084d81ca71357c4400e, type: 3}
   _model: {fileID: 6301925884622476066, guid: d9c9630f3aafe084b97da71fcececd6b, type: 3}

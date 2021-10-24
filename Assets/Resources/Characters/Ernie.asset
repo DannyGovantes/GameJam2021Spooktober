@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Ernie
   _description: "Ac\xE1 bien borracho. S\xED sean toja un tequila. Siono raza"
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: 01bd26636c8f2dd49b2f9285cd762010, type: 3}
