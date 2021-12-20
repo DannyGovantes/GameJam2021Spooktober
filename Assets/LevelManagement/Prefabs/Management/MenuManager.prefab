@@ -52,4 +52,5 @@ MonoBehaviour:
   levelRecipieMenuPrefab: {fileID: 7446047590371847440, guid: 95bae090c90506b42b970abdb2cbe415, type: 3}
   instructionsMenuPrefab: {fileID: 5623181281660501245, guid: 3e35def9d95e4784fbb481ec1e377355, type: 3}
   endMenuPrefab: {fileID: 8357243445399463744, guid: a130a64e5b4b7404dad4c95597c0c6eb, type: 3}
+  aRControllerMenuPrefab: {fileID: 8137771650514023333, guid: 3bce61630ab82544881f8b0e52a36074, type: 3}
   _menuParent: {fileID: 0}
