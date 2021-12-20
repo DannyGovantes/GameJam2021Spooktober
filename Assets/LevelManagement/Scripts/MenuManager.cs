@@ -26,6 +26,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField]
     private EndMenu endMenuPrefab;
 
+    [SerializeField]
+    private ARControllerMenu aRControllerMenuPrefab;
+
 
     #endregion
 

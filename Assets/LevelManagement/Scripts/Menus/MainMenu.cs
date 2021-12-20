@@ -36,6 +36,12 @@ using UnityEngine.UI;
     // yield return new WaitForSeconds(_playDelay);
     // }
 
+    public void OnARPressed()
+    {
+        
+        LevelLoader.LoadLevel(3);
+        ARControllerMenu.Open();
+    }
     public void Update()
     {
         _rawImage.uvRect = new Rect(_rawImage.uvRect.position + new Vector2(_x, _y) * Time.deltaTime, _rawImage.uvRect.size);
